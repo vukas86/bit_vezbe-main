@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="handle-upload.html" method="GET">
+        <p>
+            Place of birth:
+            <input type="text" name="city">
+
+        </p>
+        <p>
+            Date of birthday:
+            <select name="birth">
+                <option value="day">1</option>
+                <option value="day2">15</option>
+                <option value="day3">23</option>
+            </select>
+            <select name="birthMonth">
+                <option value="Month">January</option>
+                <option value="Month2">December</option>
+                <option value="Month3">March</option>
+            </select>
+            <select name="birthYear">
+                <option value="Year">1963</option>
+                <option value="Year2">2001</option>
+                <option value="Year3">1980</option>
+            </select>
+        <p> Are you married?
+            <input type="radio" name="marrige" value="yes" checked>Yes
+            <input type="radio" name="marrige" value="No">No
+        </p>
+
+        <textarea name="text" cols="30" rows="10" placeholder="additional comments..."></textarea><br>
+        <input type="reset" value="Reset">
+        <button>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb4xI4595F4eSymw5fFgcY6OZwEHu00vGdUQ&usqp=CAU"
+                alt="submit" height="15"> Submit
+        </button>
+        <input type="hidden" name="username" value="user">
+    </form>
+</body>
+
+</html>
