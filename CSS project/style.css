@@ -10,11 +10,27 @@ body {
     margin: 0 auto;
 }
 
+div h1{
+    background: #bdeee6;
+}
+
 h1 {
     padding: 20px 0;
     text-align: center;
     background: #2962ff;
-    color: white;
+    
+}
+
+div>p{
+    background: #9084f5b9;
+}
+
+.klass>p>em{
+    color: #e3f2fd;
+}
+
+.klass a{
+    background: #94c3e5;
 }
 
 h2 {
@@ -33,8 +49,8 @@ img {
 
 table {
     width: 100%;
-    color: #333;
-    background: white;
+    color: rgb(17, 12, 34);
+    background: rgb(140, 230, 145);
     border-collapse: collapse;
 }
 
@@ -53,4 +69,12 @@ td:first-child {
 
 p#footer {
     margin-top: 100px;
+}
+
+.second {
+    background: #bff1c1;
+}
+
+.first {
+    background: #dda42a;
 }
