@@ -1,12 +1,34 @@
-.firstP{
+.img{
+    background-color: forestgreen;
     color: darkturquoise;
+    opacity: 0.5;
 }
 
-.secondP{
+.img1{
+    background-color: rgba(55, 62, 160, 0.5);
     color:rgb(226, 52, 52);
 }
 
 .thirdP{
+    background-color: #D1D67A;
     color:#4655B0;
 }
 
+.col1{
+    background-color: aliceblue;
+}
+
+.col2{
+    background-color: hotpink;
+}
+
+.col3{
+    background-color: royalblue;
+}
+.col4{
+    background-color: yellowgreen;
+}
+.col5{
+    background-color: red;
+    color: seashell;
+}
