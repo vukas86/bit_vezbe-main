@@ -1,0 +1,17 @@
+.first1{
+    text-transform: uppercase;
+    text-decoration:underline;
+    text-align: left;
+}
+
+.first2{
+    text-transform: lowercase;
+    text-decoration:line-through;
+    text-align: right;
+}
+
+.first3{
+    text-align: center;
+}
+
+

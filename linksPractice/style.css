@@ -1,0 +1,41 @@
+a{
+    color: rgb(55, 202, 112);
+    text-shadow: 5px 15px 2px rgba(255, 152, 150, 0);
+    text-decoration:none;
+}
+
+.start:link{
+    color: rgb(8, 0, 0);
+}
+
+a:visited{
+    color: rgb(226, 99, 131);
+}
+
+.start:hover{
+    color: chartreuse;
+}
+
+ul ul ul{
+    color: chartreuse;
+}
+
+ul ul ul:hover{
+    color: black;
+}
+
+ul ul :nth-child(2){
+    color: red;
+    text-decoration:dotted;
+}
+
+button:disabled{
+    color: brown;
+}
+
+input:required{
+    color: burlywood;
+    background-color: chartreuse;
+}
+
+
