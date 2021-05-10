@@ -1,0 +1,12 @@
+p {
+    background-color: yellow;
+    border-width: 5px;
+}
+
+.first, .third{
+    border: 5px dotted red;
+}
+
+.second{
+    border: 5px solid green;
+}

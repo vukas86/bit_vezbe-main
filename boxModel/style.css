@@ -1,0 +1,15 @@
+.first{
+    background-color: rgb(248, 252, 21);
+    width: 400px; 
+    max-width: 300px;
+    height: 500px;
+    overflow: auto;
+}
+
+.second{
+    background-color: red;
+    width: 600px;
+    height: 300px;
+    max-height: 200px;
+    overflow: hidden;
+}
