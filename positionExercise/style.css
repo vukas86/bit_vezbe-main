@@ -1,19 +1,58 @@
-#pic1{
-    height: 500px;
+
+ul{
+   list-style: none;
+}
+
+nav ul li{
     position: relative;
-    top: 50px;
-    left: 100px;
-    margin-bottom: 40px;
+    display: inline-block;
+    list-style: none; 
+    padding:20px;
+}
+
+
+
+nav ul li:hover{
+    background-color: rgb(177, 177, 177);
+}
+
+
+nav:first-child{
+    background-color: rgb(250, 194, 41);
 
 }
 
-#pic2{
-    height: 300px;
+.li1{
+    background-color: grey;
+  
+}
+
+ul li ul{
+    position: relative;
+    display: none;
+    width: 100px;
+    
+
+
+
+}
+
+ul li:hover ul{
     position: absolute;
-    right: 10px;
-    top: 15px;
-
+    left: 0;
+    top: 50px;
+    display: inline-block;
+    
+   
+    
 }
+
+ul li ul:nth-child(odd){
+    background-color: rgba(245, 245, 245, 0.938);
+}
+
+
+
 
 #pic3{
     height: 300px;
