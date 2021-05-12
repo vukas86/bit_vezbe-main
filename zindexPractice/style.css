@@ -1,0 +1,56 @@
+div{
+    height: 200px;
+    width: 200px;
+}
+
+/* .first{
+    position: fixed;
+    background-color: blue;
+    z-index:5000;
+    top:350px;
+    left:525px;
+}
+.second{
+    background-color: brown;
+    position: fixed;
+    z-index: 55;
+    top:450px;
+    left:400px;
+
+}
+
+.third{
+    background-color: yellow;
+    position: fixed;
+    top:550px;
+    left: 300px;
+    z-index: 15;
+}
+ */
+.pos{
+    position: relative;
+}
+
+.one{
+    background-color: blue;
+    z-index: 20;
+    position: absolute;
+    top:350px;
+    left: 50px;
+}
+
+.two{
+    background-color: brown;
+    z-index: 3000;
+    position: absolute;
+    top:450px;
+    left: 150px;
+}
+
+.three{
+    background-color: yellow;
+    z-index: 50;
+    position: absolute;
+    top:550px;
+    left: 250px;
+}

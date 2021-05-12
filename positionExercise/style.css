@@ -1,7 +1,4 @@
 
-ul{
-   list-style: none;
-}
 
 nav ul li{
     position: relative;
@@ -13,7 +10,8 @@ nav ul li{
 
 
 nav ul li:hover{
-    background-color: rgb(177, 177, 177);
+    background-color: rgb(226, 222, 222);
+    
 }
 
 
@@ -23,25 +21,25 @@ nav:first-child{
 }
 
 .li1{
-    background-color: grey;
+    background-color: rgb(168, 163, 163);
+    padding:11px;
   
 }
 
 ul li ul{
     position: relative;
+    text-align: left;
     display: none;
-    width: 100px;
-    
-
-
+    width: 200px;
+    padding: 0;
 
 }
 
 ul li:hover ul{
     position: absolute;
-    left: 0;
     top: 50px;
     display: inline-block;
+    left: 0;
     
    
     
