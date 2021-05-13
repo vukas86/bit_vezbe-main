@@ -30,7 +30,7 @@ ul li ul{
     position: relative;
     text-align: left;
     display: none;
-    width: 200px;
+    min-width: 200px;
     padding: 0;
 
 }
@@ -38,9 +38,9 @@ ul li ul{
 ul li:hover ul{
     position: absolute;
     top: 50px;
-    display: inline-block;
+    display: block;
     left: 0;
-    width: 150px;
+    min-width: 120px;
     
    
     
