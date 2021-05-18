@@ -1,0 +1,184 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cf:before,
+.cf::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.container1{
+    background-image: url("images/banner3.jpg");
+    background-size: cover;
+    height: 800px;
+    margin-top: 0;
+    padding:0 20px 0 20px;
+}
+
+.container1 h1{
+    word-spacing: 15px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    position: relative;
+    padding-top: 400px;
+    font-size: 75px;
+    font-weight: normal;
+}
+
+.container1 img{
+    width: 200px;
+    float: left;
+    position: absolute;
+    padding-top: 10px;
+}
+
+.container1 ul {
+    float:right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.container1 ul li{
+    font-weight: bold;
+    float:left;
+    margin-left: 20px;
+}
+
+.container1 ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.container1 button{
+    background-color: #236EAF;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    padding:10px 30px 10px 30px;
+    border-radius: 16px;
+    
+   margin: 0 auto;
+   margin-top: 40px;
+    
+}
+
+.container1 button a{
+    color: white;
+    text-decoration: none;
+}
+
+.name h2{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.name h3{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin: 0 auto;
+   
+}
+
+.name h3:before,
+.name h3:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #000;
+    margin: auto;
+}
+
+.name h3 img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+/* .stretch{
+    text-align:center;
+}
+
+.container2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    
+}
+
+.container2b img{
+    height: 300px;
+
+}
+
+
+
+
+.container2a ul li{
+    list-style: url("images/yellow-p.png");
+}
+
+
+
+.container2c ul li{
+    list-style: url("images/yellow-p.png");
+}
+
+.left{
+    display: inline-block;
+    width: 30%;
+        height: 300px;
+        padding: 0 10px;
+        padding-right:15px;
+        margin-top: 0;
+        
+}
+
+.card{
+   
+
+
+}
+
+.right{
+    display: inline-block;
+    height: 300px;
+    max-width: 200px;
+    min-width:200px;
+    width: 40%;
+
+  
+ 
+} */
+
+.container2, .card{
+    width: 60%;
+	background: blue; 
+    display: inline-block;
+    justify-content: center;
+    margin-left: 50px;
+    margin: 0 auto;
+
+    max-width: 300px;
+    min-width: 300px;
+
+}
+.container2 ul li{
+    list-style: url("images/yellow-p.png");
+}
+
+
+
+
+
+
+
