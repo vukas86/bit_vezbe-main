@@ -72,6 +72,7 @@ body{
 .container1 button a{
     color: white;
     text-decoration: none;
+    box-shadow: none;
 }
 
 .name h2{
@@ -103,82 +104,162 @@ body{
     margin: 0 auto;
 }
 
-/* .stretch{
-    text-align:center;
-}
 
-.container2{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    
-}
-
-.container2b img{
-    height: 300px;
-
-}
-
-
-
-
-.container2a ul li{
-    list-style: url("images/yellow-p.png");
-}
-
-
-
-.container2c ul li{
-    list-style: url("images/yellow-p.png");
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
 }
 
 .left{
-    display: inline-block;
-    width: 30%;
-        height: 300px;
-        padding: 0 10px;
-        padding-right:15px;
-        margin-top: 0;
-        
-}
-
-.card{
-   
-
+    margin-left: 195px;
 
 }
 
-.right{
-    display: inline-block;
-    height: 300px;
-    max-width: 200px;
-    min-width:200px;
-    width: 40%;
 
-  
- 
-} */
 
-.container2, .card{
-    width: 60%;
-	background: blue; 
-    display: inline-block;
-    justify-content: center;
-    margin-left: 50px;
-    margin: 0 auto;
-
-    max-width: 300px;
-    min-width: 300px;
-
+.card {
+    float:left;
+    width:20%;
+    margin-top: 15px;
+    height: 400px;
+    margin-right: 25px;
 }
-.container2 ul li{
+
+.card p{
+    line-height: 24px;
+}
+
+.card ul{
+    padding-top: 30px;
+}
+
+.card ul li{
     list-style: url("images/yellow-p.png");
+    line-height: 30px;
+    font-size: 14px;
+   
+}
+
+.card h3{
+    color: #236EAF;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.img2{
+    width:440px;
+    height:400px
+}
+
+
+.none{
+    width: 35%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.wrapper2{
+    width: 90%;
+    margin:0 auto;
 }
 
 
 
+.card1{
+    border: 1px solid lightblue ;
+    background-color: #82c3f5;
+    width: 28%;
+    padding:20px;
+    float: left;
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 100px;
+}
 
 
+.card1 p{
+    color: white;
+    
+}
 
+.card1 h3{
+    display: inline;
+    font-size: 14px;
+}
+.people{
+    border-radius:100%;
+    border:5px solid rgb(255, 250, 250);
+    width: 100px;
+    padding: 5px;
 
+}
+
+.star{
+    display: inline;
+    width: 100px;
+    padding:0;
+    margin-bottom: 30px;
+}
+
+.willy{
+    display: inline-block;
+    width: 100px;
+    padding:0;
+    margin-left: 20px;
+}
+
+.wrapper3{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contact{
+    background-color: rgb(88, 221, 104);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact p em{
+   margin-right: 5px;
+}
+
+.connect{
+    background-color: rgb(194, 15, 54);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.connect img{
+    margin-right: 10px;
+}
+
+.address{
+    background-color: rgb(3, 3, 128);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.house{
+    background-color: rgb(100, 143, 218);
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.card3{
+    margin: 0;
+    float:left;
+width: 23.75%;
+    height: 210px;
+}
+
+.new iframe{
+    width: 100%;
+    display: block;
+}
