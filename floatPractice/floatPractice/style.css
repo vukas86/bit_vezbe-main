@@ -29,8 +29,6 @@ header{
     margin: 0 auto;
     padding: 15px;
 
-
-
 }
 
 
@@ -58,33 +56,34 @@ header ul li{
 /* Image */
 
 .img1{
-    
     padding-top: 2px; 
     width: 985px;  
 }
 
-#right1{
+aside>#right1{
     text-decoration: none;
     background-color: #ffbe00;
     height: 250px;
     width: 31%;
-    margin:auto;
-    margin-left:15px;
+    margin:0 auto;
     padding-left: 1px;
     float: right;
     list-style-type: none;
     margin-top: 10px;
-    
-
 }
 
-#right1>.list>a{
-    line-height: 35px;
+aside #right1>.list>a>em{
+    color: #ffbe00;;
+}
+
+aside #right1>.list>a{
+     line-height: 35px;
     border-bottom: 1px solid navy;
-    padding: 5px 0px;
+    padding: 5px 0px; 
     font-size: 1.2em;
     color: navy;
     text-decoration: none;
+
 }
 
 .card {
@@ -121,9 +120,15 @@ clear: both;
 
 
 
-/* footer{
+footer{
+    overflow: hidden;
     color: white;
     text-align: center;
     background-color: rgba(45,62,80,255);
+    padding:3px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1000px;
+    margin-top: 0;
     
-} */
+}
