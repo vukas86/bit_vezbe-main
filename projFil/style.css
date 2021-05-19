@@ -1,4 +1,5 @@
 body{
+    box-sizing: border-box;
     padding: 0;
     margin:0;
     font-family: 'Roboto', sans-serif;
@@ -11,16 +12,46 @@ body{
     clear: both;
 }
 
+hr {
+    border: solid 1px #333;
+    /* color: #333; */
+    overflow: visible;
+    text-align: center;
+    height: 1px;
+}
+
+hr:after {
+    background: #fff;
+    content: '◇';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
 
 .container1{
-    background-image: url("images/banner3.jpg");
-    background-size: cover;
     height: 800px;
     margin-top: 0;
     padding:0 20px 0 20px;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
 }
 
-.container1 h1{
+
+.shape{
+    text-align: center;
+    background-image: url('../images/banner3.jpg');
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 0;
+    margin-top: -30px;
+    background-position: center;
+    height: 800px;
+}
+
+.container1 h2{
     word-spacing: 15px;
     text-align: center;
     color: white;
@@ -38,27 +69,26 @@ body{
     padding-top: 10px;
 }
 
-.container1 ul {
+.nav-bar ul {
     float:right;
     list-style-type: none;
     margin-top: 30px;
     margin-right: 20px;
 }
 
-.container1 ul li{
+.nav-bar ul li{
     font-weight: bold;
     float:left;
     margin-left: 20px;
 }
 
-.container1 ul li a{
+.nav-bar ul li a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
 .container1 button{
     background-color: #236EAF;
-    display: flex;
   justify-content: center;
   align-items: center;
     padding:10px 30px 10px 30px;
@@ -78,10 +108,11 @@ body{
 .name h2{
     text-align: center;
     margin-bottom: 0;
-    margin-top: 50px;
+margin: auto;
+    border-bottom: 1px solid red;
 }
 
-.name h3{
+/* .name h3{
     display: flex;
     flex-direction: row;
     width: 30%;
@@ -89,12 +120,15 @@ body{
    
 }
 
-.name h3:before,
 .name h3:after{
+    border-bottom: 5px solid #4f47f6;
     content: "";
-    flex: 1 1;
-    border-bottom: 2px solid #000;
-    margin: auto;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 .name h3 img{
@@ -103,26 +137,37 @@ body{
     border-radius: 50px;
     margin: 0 auto;
 }
-
+ */
 
 .wrapper{
     width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .left{
-    margin-left: 195px;
+    width: 30%;
+    float: left;
+    margin-right: 2%;
+    line-height: 2em;
 
 }
 
 
 
-.card {
+/* .card {
     float:left;
     width:20%;
     margin-top: 15px;
     height: 400px;
     margin-right: 25px;
+} */
+
+.right{
+    width: 30%;
+    float: left;
+    margin-left: 2%;
+    line-height: 2em;
 }
 
 .card p{
@@ -144,11 +189,12 @@ body{
     color: #236EAF;
     font-size: 20px;
     font-weight: normal;
+
 }
 
 .img2{
-    width:440px;
-    height:400px
+    width: 30%;
+    float: left;
 }
 
 
@@ -159,8 +205,9 @@ body{
 }
 
 .wrapper2{
-    width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
 }
 
 
@@ -174,6 +221,11 @@ body{
     margin-left: 20px;
     margin-top:15px;
     margin-bottom: 100px;
+    height: 250px;
+
+}
+.card1:nth-child(3n) {
+    margin-right: 0;
 }
 
 
@@ -185,6 +237,7 @@ body{
 .card1 h3{
     display: inline;
     font-size: 14px;
+    white-space: nowrap;
 }
 .people{
     border-radius:100%;
@@ -215,10 +268,15 @@ body{
 }
 
 .contact{
-    background-color: rgb(88, 221, 104);
-    color: white;
+    width: 25%;
+    height: 300px;
+    background-color: #3bdd9a;
+    margin-top: 20px;
+    float: left;
+    padding: 5%;
     text-align: center;
-    padding: 10px;
+    color: white;
+    font-size: 1.5em;
 }
 
 .contact p em{
@@ -226,10 +284,17 @@ body{
 }
 
 .connect{
-    background-color: rgb(194, 15, 54);
-    color: white;
+    width: 25%;
+    height: 300px;
+    background-color: #fd5282;
+    margin-top: 20px;
+    float: left;
     text-align: center;
-    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 5%;
+
 }
 
 .connect img{
@@ -237,29 +302,333 @@ body{
 }
 
 .address{
-    background-color: rgb(3, 3, 128);
-    color: white;
+    width: 25%;
+    height: 300px;
+    background-color: #376de4;
+    margin-top: 20px;
+    float: left;
     text-align: center;
-    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 5%;
     
 }
 
 .house{
-    background-color: rgb(100, 143, 218);
-    color: white;
-    text-align: center;
-    padding: 10px;
+    width: 25%;
+    height: 300px;
+    background-color: #82c3f5;
+    margin-top: 20px;
+    float: left;
 
 }
 
 .card3{
     margin: 0;
     float:left;
-width: 23.75%;
+width: 23.70%;
     height: 210px;
 }
 
 .new iframe{
     width: 100%;
     display: block;
+}
+
+.wrapper4{
+    width: 70%;
+    margin: 0 auto;
+}
+
+input {
+    width: 32%;
+    height: 50px;
+    margin-right: 1%;
+    border: 1px solid rgb(121, 121, 121);
+
+}
+
+input:nth-child(3n) {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+textarea {
+    width: 99%;
+    height: 300px;
+    margin-top: 15px;
+    border: 1px solid rgb(121, 121, 121);
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(30, 4, 4);
+    color:white;
+}
+
+footer ul {
+    display: inline;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+footer ul li{
+    display: inline;
+    margin-left: 20px;
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* da se doda kod jenifer Lopez */
+
+/* white-space: nowrap; */
+
+@media only screen and (max-width: 768px) {
+
+    .wrapper{
+        width: 100%;
+        margin-top: 15px;
+        height: 700px;
+    }
+    
+    .card.left{
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+        line-height: 2em;
+    
+    }
+
+    .card.right{
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        line-height: 2em;
+        float: none;
+    }
+    
+    
+    
+  /*   .card {
+        float:left;
+        width:20%;
+        margin-top: 15px;
+        height: 400px;
+        margin-right: 25px;
+    } */
+    
+    .card p{
+        line-height: 24px;
+    }
+    
+    .card ul{
+        padding-top: 30px;
+    }
+    
+    .card ul li{
+        list-style: url("images/yellow-p.png");
+        line-height: 30px;
+        font-size: 14px;
+       
+    }
+    
+    .card h3{
+        color: #236EAF;
+        font-size: 20px;
+        font-weight: normal;
+    
+    }
+    
+    .img2{
+        width: 48%;
+        float: left;
+    }
+    
+    
+
+
+
+
+
+
+    .wrapper2{
+        margin-top: 20px;
+        height: 650px;
+
+    }
+    
+    
+    
+    .card1{
+        border: 1px solid lightblue ;
+        background-color: #82c3f5;
+        width: 40px;
+        height: 300px;
+        padding:20px;
+        float: left;
+        margin-right: 3%;
+        margin-bottom: 1%;
+       
+    }
+
+    .card1:nth-child(3n) {
+        margin-right: 0;
+    }
+    
+    
+    .card1 p{
+        color: white;
+        
+    }
+    
+    .card1 h3{
+        display: inline;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .people{
+        border-radius:100%;
+        border:5px solid rgb(255, 250, 250);
+        width: 100px;
+        padding: 5px;
+    
+    }
+    
+    .star{
+        display: inline;
+        width: 100px;
+        padding:0;
+        margin-bottom: 30px;
+    }
+    
+    .willy{
+        display: inline-block;
+        width: 100px;
+        padding:0;
+        margin-left: 20px;
+    }
+    
+    .wrapper3{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .contact{
+        width: 50%;
+        height: 200px;
+        background-color: #3bdd9a;
+        margin-top: 20px;
+        float: left;
+        padding: 5%;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+    
+    .contact p em{
+       margin-right: 5px;
+    }
+    
+    .connect{
+        width: 50%;
+        height: 200px;
+        background-color: #fd5282;
+        margin-top: 20px;
+        float: left;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        padding: 5%;
+    }
+    
+    .connect img{
+        margin-right: 10px;
+    }
+    
+    .address{
+        width: 50%;
+        height: 200px;
+        background-color: #376de4;
+        /* margin-top: 20px; */
+        float: left;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        padding: 5%;
+        margin: 0;
+        
+    }
+    
+    .house{
+        width: 50%;
+        height: 200px;
+        background-color: #82c3f5;
+        /* margin-top: 20px; */
+        float: left;
+        margin: 0;
+    
+    }
+    
+    .card3{
+        margin: 0;
+        float:left;
+    width: 23.70%;
+        height: 210px;
+    }
+    
+    .new iframe{
+        width: 100%;
+        display: block;
+    }
+    
+    .wrapper4{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    input{
+        display: inline-block;
+        padding: 20px;
+        width:300px;
+        margin-right: 25px;
+    }
+    
+    textarea{
+        margin-top: 15px;
+        width:97%;
+    }
+    
+    footer{
+        padding: 20px;
+        text-align: center;
+        background-color: rgb(30, 4, 4);
+        color:white;
+    }
+    
+    footer ul {
+        display: inline;
+        list-style-type: none;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    footer ul li{
+        display: inline;
+        margin-left: 20px;
+    }
+    
+    footer ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    
 }
