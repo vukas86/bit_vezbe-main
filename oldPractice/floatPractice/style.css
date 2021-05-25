@@ -1,0 +1,124 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: red;
+    width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+
+
+
+}
+
+.cf:before,
+.cf::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+ul{
+    float: right;
+
+    height:20px;
+    list-style-type: none;
+    color: white;
+    margin: auto;
+
+}
+
+ul li{
+    font-weight: bold;
+    float:left;
+    margin: 5px;
+}
+
+ul li a{
+ 
+    text-decoration: none;
+    color: white;
+}
+
+.pic{
+    
+    margin-top: 3px;
+    padding-left:765px;
+}
+.first{
+width: 30%;
+height: ;
+}
+
+.f1>h6{
+    background-color: red;
+    color: whitesmoke;
+    width: 150px;
+    height:150px;
+    text-align: center;
+    
+}
+
+.f2>h6{
+    background-color: rgb(12, 16, 73);
+    color: whitesmoke;
+    width: 150px;
+    height:150px;
+    text-align: center;
+}
+
+.f3>h6{
+    background-color: rgb(189, 180, 52);
+    color: whitesmoke;
+    width: 150px;
+    height:150px;
+    text-align: center;
+}
+
+.f4>h6{
+    background-color: rgb(40, 146, 37);
+    color: whitesmoke;
+    width: 150px;
+    height:150px;
+    text-align: center;
+}
+
+.f5>h6{
+    background-color: rgb(143, 43, 18);
+    color: whitesmoke;
+    width: 150px;
+    height:150px;
+    text-align: center;
+}
+
+.f6>h6{
+    background-color: rgb(12, 16, 73);
+    color: whitesmoke;
+    width: 150px;
+    height:150px;
+    text-align: center;
+}
+
+.f7>h6{
+    background-color: rgb(189, 180, 52);
+    color: whitesmoke;
+    width: 150px;
+    height:150px;
+    text-align: center;
+}
+
+.f8>h6{
+    background-color: rgb(40, 146, 37);
+    color: whitesmoke;
+    width: 150px;
+    height:150px;
+    text-align: center;
+}
+
+.f9{
+    background-color:yellow;
+    padding-bottom: 3px;
+    height: 20px;
+}
+

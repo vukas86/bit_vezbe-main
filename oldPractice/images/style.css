@@ -1,0 +1,16 @@
+.first{
+    height: 200px;
+    float: right;
+}
+
+.first2{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.first3{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
