@@ -128,7 +128,7 @@ header .logo {
 /*WHO WE ARE*/
 
 
-.wrapper{
+.about{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -193,7 +193,7 @@ header .logo {
 /* >> WHAT PEOPLE SAY<<< */
 
 
-.wrapper2{
+.others{
     width: 100%,
     margin: 0 auto;
     margin-top: 20px;
@@ -258,7 +258,7 @@ header .logo {
 
 /* >> GET IN TOUCH WITH US << */
 
-.wrapper3{
+.contactUs{
     width: 100%;
     margin:0;
     padding: 0;
@@ -316,7 +316,7 @@ width: 25%;
 
 
 
-.wrapper4{
+.form{
     width: 75%;
     margin: 0 auto;
 }
@@ -448,7 +448,7 @@ footer ul li a{
 
 
 /*who we are*/
-.wrapper{
+.about{
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
@@ -496,7 +496,7 @@ footer ul li a{
 /* >> WHAT PEOPLE SAY<<< */
 
 
-.wrapper2{
+.others{
     width: 100%;
     margin: 0 auto;
     display: inline-block;
@@ -518,7 +518,7 @@ footer ul li a{
 /*GET IN TOUCH*/
 
 
-.wrapper3{
+.contactUs{
     width: 100%;
     margin:0;
     padding: 0;
@@ -660,7 +660,7 @@ header .logo {
 
 /*>>>>WHO WE ARE<<<<<*/
 
-.wrapper{
+.about{
     width: 90%;
     max-width: 1200px;
     margin-left: 0;
@@ -706,7 +706,7 @@ float: none;
 /*>>>>ABOUT US<<<<*/
 
 
-.wrapper2{
+.others{
     width: 100%;
     margin: 0 auto;
     display: inline-block;
@@ -734,7 +734,7 @@ float: none;
 
 /*>>>>>>CONTACT US<<<<<<<*/
 
-.wrapper3{
+.contactUs{
     width: 100%;
     margin:0;
     padding: 0;
