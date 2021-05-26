@@ -66,8 +66,8 @@ a.nav-link.letter{
     width: 150px;
     height:2px;
     background: white;
-    left: 795px;
-    top: 53%;
+    left: 787px;
+    top: 49.5%;
     position: absolute; 
 }
 .mid:after{
@@ -76,8 +76,8 @@ a.nav-link.letter{
     width: 150px;
     height: 2px;
     background: white;
-    right: 795px;
-    top: 53%;
+    right: 787px;
+    top: 49.5%;
    position: absolute; 
 }
 
@@ -135,6 +135,7 @@ a.nav-link.letter{
     text-align: center;
     color: white;
     position: relative;
+    padding-top: 20px;
 }
 
 .about h2{
@@ -149,8 +150,8 @@ a.nav-link.letter{
     width: 150px;
     height:2px;
     background: white;
-    left: 795px;
-    top: 12%;
+    left: 785px;
+    top: 14%;
     position: absolute; 
 }
 .ab:after{
@@ -159,8 +160,8 @@ a.nav-link.letter{
     width: 150px;
     height: 2px;
     background: white;
-    right: 795px;
-    top: 12%;
+    right: 785px;
+    top: 14%;
    position: absolute; 
 }
 
@@ -179,6 +180,7 @@ a.nav-link.letter{
     vertical-align: middle;
     font-size: 18px;
     padding: 5px;
+    margin-top: 50px;
 }
 
 .find p{
@@ -196,6 +198,28 @@ a.nav-link.letter{
     position: relative;
     width: 50%;
 }
+
+.eal:before{
+    content: "";
+    display: block;
+    width: 150px;
+    height:2px;
+    background: black;
+    left: 495px;
+    top: 11%;
+    position: absolute; 
+}
+.eal:after{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background: black;
+    right: 495px;
+    top: 11%;
+   position: absolute; 
+}
+
 
 .contact h2{
     text-transform: uppercase;
