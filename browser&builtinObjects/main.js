@@ -49,8 +49,24 @@ function removeData() {
 
 console.log(storeData("mika", "leka")); */
 
-function goBack() {
+/* function goBack() {
     history.back(2)
 
 }
-console.log(goBack())
+console.log(goBack()) */
+
+(function () {
+    alert("Heyyy You, welcome!");
+})()
+
+var userInput = confirm('Are you over 18?');
+var userChoice =prompt('Are you sure?');
+
+if (userChoice !== null){
+    alert("WELCOME AGAIN!")
+}
+
+
+/* (function () {
+    alert("Heyyy You, welcome!");
+})() */
