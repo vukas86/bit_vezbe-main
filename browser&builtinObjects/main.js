@@ -56,14 +56,16 @@ console.log(storeData("mika", "leka")); */
 console.log(goBack()) */
 
 (function () {
-    alert("Heyyy You, welcome!");
+    alert("WELCOME TO THE HOUSE OF BEER");
 })()
 
 var userInput = confirm('Are you over 18?');
-var userChoice =prompt('Are you sure?');
+var userChoice = prompt('Are you sure?');
 
-if (userChoice !== null){
-    alert("WELCOME AGAIN!")
+if (userChoice !== null) {
+    alert(userChoice);
+} else {
+    alert("ANSWER THE QUESTION!");
 }
 
 
