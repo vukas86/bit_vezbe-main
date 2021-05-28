@@ -11,6 +11,24 @@
     text-transform: lowercase;
 } */
 
-.active{
+/* .active{
     background-color: coral;
+} */
+
+body{
+    color: cornsilk;
+    background-image: url("beer1.jpg");
+    background-position: center;
+    background-repeat;
+    background-size:cover;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+.abou{
+    background-color:transparent;
+    padding: 30px;
 }
