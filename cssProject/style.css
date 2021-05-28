@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 body{
     padding: 0;
     margin:0;
@@ -10,74 +15,81 @@ body{
     display: table;
     clear: both;
 }
-      /*  >>  HEADER << */
-.container1{
-    background-image: url("assets/images/banner3.jpg");
-    background-size: cover;
-    height: 1200px;
-    margin-top: 0;
-    padding:0 20px 0 20px;
-}
 
-.container1 h2{
-    word-spacing: 5px;
-    text-align: center;
-    color: white;
+header .logo {
     margin: 0;
+    color: white;
+    float: left;
     position: relative;
-    padding-top: 510px;
-    font-size:65px;
-    font-weight: normal;
-}
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 2.5em;
+  }
 
-
-.container1 ul {
+  header .logo2{
+    display: none;
+  }
+  header ul {
     float: right;
     list-style-type: none;
-    margin-top: 30px;
-    padding-top:10px;
-}
-
-.container1 ul li{
-    float: left;
-    margin-left: 26px;
     margin-right: 15px;
-}
+    margin-top: 25px;
+  }
 
-.container1 ul li a{
+  header ul li a{
+        text-decoration: none;
+        color: white;
+      }
+  header ul li {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
     color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.shape{
-    text-align:center;
-}
-
-.container1 button{
-    background-color: #1c70b1;
-    justify-content: center;
-    align-items: center;
-    padding:20px 40px 20px 40px;
-    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+  }
+  header span {
+    color: #fd9727;
+    border: 3px solid white;
+    border-right: none;
+    margin-right: 10px;
+  }
+  .banner {
+    height: 1100px;
+    background-image: url(assets/images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .banner h1 {
+    display: inline-block;
     margin: 0 auto;
-    border: none;
-    margin-top:40px;
-    
-
-}
-
-.container1 button a {
     color: white;
-    text-decoration:none;
-    font-size: 18px;
-    word-spacing: 10px;
-}
+    font-size: 60Px;
+    letter-spacing: 5PX;
+    text-align: center;
+    width: 100%;
+    font-weight: normal;
+  }
+  
+  .heading {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    margin: 0 auto;
+  }
+  .heading button {
+    padding: 0;
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1c70b1;
+    color: white;
+    margin-top: 20px;
+  }
 
-
-
+/*>>>>DIAMOND<<<<*/
 .mid h3{
     text-align:center;
     margin-bottom: 0px;
@@ -98,7 +110,7 @@ body{
     width: 150px;
     height:2px;
     background: black;
-    left: 790px;
+    left: 770px;
     top: 45%;
     position: absolute; 
 }
@@ -108,18 +120,19 @@ body{
     width: 150px;
     height: 2px;
     background: black;
-    right: 790px;
+    right: 770px;
     top: 45%;
    position: absolute; 
 }
 
-
+/*WHO WE ARE*/
 
 
 .wrapper{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 500px;
 }
 
 .left{
@@ -129,16 +142,6 @@ body{
     line-height: 2em;
 
 }
-
-
-
-/* .card {
-    float:left;
-    width:20%;
-    margin-top: 15px;
-    height: 400px;
-    margin-right: 25px;
-} */
 
 .right{
     width: 30%;
@@ -174,8 +177,9 @@ body{
 }
 
 .img2{
-    width: 30%;
+    width: 335px;
     float: left;
+    margin-left:45px;
 }
 
 
@@ -190,18 +194,18 @@ body{
 
 
 .wrapper2{
-    width: 90%;
+    width: 100%,
     margin: 0 auto;
     margin-top: 20px;
     display: inline-block;
-    margin-left: 200px;
+    margin-left: 55px;
 }
 
 .card1{
     border: 1px solid lightblue ;
     background-color: #82c3f5;
-    width: 28%;
-    padding:20px;
+    width: 30%;
+    padding:10px;
     float: left;
     margin-left: 20px;
     margin-top:15px;
@@ -216,6 +220,8 @@ body{
 .card1 p{
     color: white;
     line-height: 28px;
+    padding-top: 0;
+
 }
 
 .card1 h3{
@@ -245,6 +251,9 @@ body{
     padding:0;
     margin-left: 20px;
     white-space: nowrap;
+    padding-top: 30px;
+    font-weight: bold;
+    
 }
 
 /* >> GET IN TOUCH WITH US << */
@@ -258,7 +267,7 @@ body{
 .card3{
     margin: 0;
     float:left;
-width: 23.93%;
+width: 25%;
     height: 210px;
 }
 
@@ -281,11 +290,6 @@ width: 23.93%;
     padding: 10px;
 }
 
-
-
-
-
-
 .address{
     background-color:rgba(55,109,228,255);
     color: white;
@@ -294,7 +298,7 @@ width: 23.93%;
 }
 
 .house{
-    background-color: rgb(100, 143, 218);
+    background-color: #82C3F5;
     color: white;
     text-align: center;
     padding: 10px;
@@ -313,17 +317,17 @@ width: 23.93%;
 
 
 .wrapper4{
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
 }
 
 input{
     
-   float: left;
-   width: 300px;
+    float: left;
+    width: 320px;
     padding: 20px;
     margin-bottom: 5px;
-    margin-right: 15px;
+    margin-right: 10px;
     position: relative;
 }
 textarea{
@@ -341,8 +345,12 @@ textarea{
     margin-top: 20px;
     border: none;
     font-size: 20px;
+    margin-left: 1px;
     
 }
+
+/*>> FOOTER <<*/
+
 
 footer{
     background-color: #212121;
@@ -381,102 +389,61 @@ footer ul li a{
 
 /*>>>>TABLETS<<<<<*/
 
-@media only screen and (max-width: 768px) { 
-    .container1{
-        background-image: url("assets/images/banner3.jpg");
-        background-size: cover;
-        height: 800px;
-        margin-top: 0;
-        padding:0 20px 0 20px;
-    }
+@media only screen and (max-width: 1200px) { 
 
-
-   .logo{
-       width: 30%;
-   }
-
-
-    
-    .container1 h2{
-       /*  word-spacing: 5px; */
-        text-align: center;
-        color: white;
-        margin: 0;
-        position: relative;
-        padding-top: 510px;
-        font-size:30px;
-        font-weight: normal;
-    }
-    
-    
-    .container1 ul {
-        float: right;
-        list-style-type: none;
-        margin-top: 30px;
-        padding-top:10px;
-    }
-    
-    .container1 ul li{
-        float: left;
-        margin-left: 26px;
-        margin-right: 15px;
-    }
-    
-    .container1 ul li a{
-        color: white;
+    header ul li a{
         text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 18px;
-    }
-    
-    .shape{
-        text-align:center;
-    }
-    
-    .container1 button{
-        background-color: #1c70b1;
-        justify-content: center;
-        align-items: center;
-        padding:20px 40px 20px 40px;
-        border-radius: 30px;
-        margin: 0 auto;
-        border: none;
-        margin-top:40px;
-        
-    
-    }
-    
-    .container1 button a {
         color: white;
-        text-decoration:none;
-        font-size: 18px;
-        word-spacing: 10px;
-    }
+      }
+    header .logo {
+        margin:0;
+        float: left;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 200px;
+      }
+
+      header .logo2{
+        display: none;
+      }
+
+      .banner h1 {
+        word-spacing: 0;
+        display: inline-block;
+        color: white;
+        font-size: 24px;
+        
+        font-weight: bold;
+      }
+      
+      .heading {
+        text-align: center;
+        position: relative;
+        top: 45%;
+        margin: 0 auto;
+      } 
+
+      .heading button {
+        padding: 0;
+        width:150px;
+        height: 50px;
+        border: none;
+        border-radius: 35px;
+        background-color: #1c70b1;
+        color: white;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+.secondline{
+    display: none;
+}
     
-
-
-
-
 .mid h1:before{
-    content: "";
-    display: block;
-    width: 150px;
-    height:2px;
-    background: black;
-    left: 210px;
-    top: 45%;
-    position: absolute; 
+    left:210px;
 }
 .mid h1:after{
-    content: "";
-    display: block;
-    width: 150px;
-    height: 2px;
-    background: black;
-    right: 210px;
-    top: 45%;
-   position: absolute; 
+    right:210px;
 }
 
 
@@ -491,8 +458,6 @@ footer ul li a{
 
 .left{
     width: 50%;
-
-
 }
 
 
@@ -503,7 +468,7 @@ footer ul li a{
 } 
 
 .right{
-    width: 55%;
+    width: 50%;
     line-height: 2em;
     text-align:left;
 }
@@ -512,28 +477,16 @@ footer ul li a{
     line-height: 24px;
 }
 
-
-
-
-
 .card h3{
     color:rgba(89,165,225,255);
     font-size: 20px;
     text-align:center;
     word-spacing: 3px;
     font-weight: normal;
-
-      
   }
 
-
-.right p{
-    text-align:left;
-}
-
-
 .img2{
-    width: 48%;
+    width: 39%;
     float: left;
     height: 300px;
 }
@@ -552,18 +505,15 @@ footer ul li a{
 .card1{
     border: 1px solid lightblue ;
     background-color: #82c3f5;
-    width: 40%;
-    padding:20px;
+    width: 46%;
     float: left;
-    height: 250px;
+    height: 280px;
     margin-bottom: 0;
-
 }
 
-.card1:nth-child(3n) {
-    margin-right: 0;
-}   
-
+.card1 p{
+    line-height: 24px;
+}
 
 /*GET IN TOUCH*/
 
@@ -577,24 +527,24 @@ footer ul li a{
 .card3{
     margin: 0;
     float:left;
-    width: 47%;
+    width: 50%;
     height: 210px;
 }
 
 /*INPUT*/
 
 input{
-    
-    float: left;
-    width: 100px;
+    display: inline-block;
+    width: 150px;
      padding: 8px;
      margin-bottom: 5px;
      margin-right: 20px;
      position: relative;
  }
  textarea{
-     width: 370px;
+     width: 500px;
      margin-top: 15px;
+     margin-right: 5px;
      padding: 15px;
      
  }
@@ -624,61 +574,216 @@ font-size: 12px;
 
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
 
-    .container1{
-        background:;
+header .logo {
+        display: none;
+
+      }
+
+    header .logo2{
+        margin: 0 auto;
+        float: none;
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+   margin-left: 140px;
     }
 
-    .container1 ul {
+
+
+      header ul {
+          padding-top: 15px;
+          padding-bottom: 15px;
+     width: 100%;
+     margin: 20px auto;
+     background-color:#82c3f5;
         float: none;
         list-style-type: none;
-        position: relative;
-        width: 100%;
-        
-    }
-    
-    .container1 ul {
-        list-style-type: none;
-        margin-top: 30px;
-        padding-top:10px;
-    }
-    
-    .container1 ul li{
-        float: none;
-        width: 100%;
-    }
-    
-    .container1 ul li a{
-        color: white;
+       padding-left: 0;
+        text-align: center;
+      }
+
+      header ul li a{
         text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 18px;
-        background-color: lightblue;
-        text-align:center;
-        margin: 100px;
+        color: white;
+      }
+      header ul li {
+        float: none;
+       margin: 15px 0;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 1.5em;
+      }
+      header span {
+        color: #fd9727;
+        border: 6px solid grey;
+        border-right: none;
+        margin-right: 10px;
+        padding-left: 10px;
+      }
+      .banner {
+        height: 400px;
+        background-image: url(assets/images/banner3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .banner h1 {
+        margin: 0 auto;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+        font-weight: normal;
+      }
+      
+      .heading {
+        text-align: center;
+        position: relative;
+        top: 35%;
+        margin: 0 auto;
+      }
 
-    }
 
-    
-
-
-
-.logo{
-    position: relative;
-    margin:0 auto;
-    text-align:center;
+.mid h1:before{
+    left: 250px;
+}
+.mid h1:after{
+    right: 250px;
 }
 
-.shape{
-    background-image: url(assets/images/banner3.jpg);
-    margin:0 auto;
+.what h1 h3{
+    display: none;
+}
 
+/*>>>>WHO WE ARE<<<<<*/
+
+.wrapper{
+    width: 90%;
+    max-width: 1200px;
+    margin-left: 0;
+
+}
+
+.left{
+    width: 100%;
+    margin-right: 0;
+    margin-left: 50px;
+}
+
+
+.right{
+    width: 100%;
+    line-height: 2em;
+    text-align:left;
+    margin-left: 50px;
+
+}
+
+.card p{
+    line-height: 24px;
+}
+
+.card h3{
+    color:rgba(89,165,225,255);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: arial;
+    text-align: left;
+   
+  }
+
+.img2{
+    width: 100%;
+float: none;
+    height: 100%;
 }
 
 
 
+/*>>>>ABOUT US<<<<*/
+
+
+.wrapper2{
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.card1{
+    border: 1px solid lightblue ;
+    background-color: #82c3f5;
+    width: 100%;
+    float: left;
+    height: 260px;
+    margin-bottom: 0;
+}
+
+.card1 h3{
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.card1 p{
+    line-height: 30px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/*>>>>>>CONTACT US<<<<<<<*/
+
+.wrapper3{
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
+
+.card3{
+    margin: 0;
+    float:left;
+    width: 100%;
+    height: 180px;
+}
+
+
+.contact{
+    height: 230px;
+}
+
+.connect img{
+    margin-right: 28px
+}
+
+.address{
+  height: 150px;
+  line-height: 15px;
+}
+
+.house{
+   height: 250px;
+
+}
+
+/*>>>INPUT<<<<<*/
+
+input{
+    display: inline-block;
+    width: 100%;
+     padding: 8px;
+     margin-bottom: 20px;
+     margin-right: 20px;
+     position: relative;
+ }
+textarea{
+     width: 100%;
+     padding: 15px;
+ }
+
+ .btn{
+    margin-top: 10px;
+  }
 
 }
 

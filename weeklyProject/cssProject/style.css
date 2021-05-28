@@ -10,13 +10,36 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.cf:before,
+/* .cf:before,
 .cf::after{
     content: "";
     display: table;
     clear: both;
 }
+ */
 
+ .underline2 {
+    width: 15%;
+    border-bottom: 4px solid black;
+    text-align: center;
+    position: relative;
+    margin:0 auto;
+  }
+
+  .underline2 h2{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Heebo', sans-serif;
+    margin-top: 50px;
+    margin-bottom: -16px;
+}
+  .underline2 span {
+    position: relative;
+    top: 15px;
+    padding: 0;
+    background: white;
+    font-size:20px;
+  }
 header .logo {
     margin: 0;
     color: white;

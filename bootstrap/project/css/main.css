@@ -32,6 +32,9 @@ a.nav-link.letter {
   text-decoration: none;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out; }
 
+.div-class {
+  float: right; }
+
 .banner {
   background-color: #18bc9c;
   height: 550px;
@@ -71,10 +74,15 @@ a.nav-link.letter {
   margin-top: 40px; }
 
 .main {
-  height: 550px;
+  height: 500px;
   margin: 0 auto;
   text-align: center;
   position: relative; }
+
+.images {
+  width: 120%;
+  padding: 15px;
+  /* padding-bottom: 10px; */ }
 
 .underline2 {
   width: 15%;
@@ -88,7 +96,7 @@ a.nav-link.letter {
   font-weight: 900;
   font-family: 'Heebo', sans-serif;
   margin-top: 50px;
-  /* margin-bottom: -16px; */ }
+  margin-bottom: -16px; }
 
 .underline2 span {
   position: relative;
@@ -102,7 +110,7 @@ a.nav-link.letter {
 
 .about {
   background-color: #18bc9c;
-  height: 700px;
+  height: 650px;
   margin: 0 auto;
   text-align: center;
   color: white;
@@ -199,5 +207,92 @@ footer {
 .cop p {
   color: #858e95;
   margin: 0; }
+
+@media only screen and (max-width: 1200px) {
+  .main {
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    position: relative; }
+
+  .images {
+    width: 80%;
+    padding: 15px;
+    float: left;
+    /* padding-bottom: 10px; */ }
+
+  .banner {
+    height: auto;
+    padding-bottom: 40px; }
+
+  .banner h1 {
+    white-space: inherit;
+    font-size: 75px; }
+
+  .about {
+    height: auto;
+    padding: 60px; }
+
+  .l1 {
+    width: 80%;
+    display: inline-block;
+    text-align: left; }
+
+  .find {
+    white-space: nowrap;
+    width: 30%;
+    margin-top: 0; }
+
+  .contact {
+    width: 80%; }
+
+  .card1 h3 {
+    text-align: center;
+    white-space: normal; }
+
+  .navbar-bit {
+    visibility: hidden; } }
+@media only screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 32px;
+    font-weight: 900; }
+
+  .underline {
+    width: 35%; }
+
+  .underline2 {
+    width: 35%; }
+
+  .main {
+    margin-left: 100px; }
+
+  .about {
+    width: 100%;
+    padding: 30px 0 30px 0; }
+
+  .about h2 {
+    font-size: 32px; }
+
+  .li {
+    width: 100%;
+    margin: 0; }
+
+  .find {
+    width: 35%; }
+
+  .contact {
+    width: 100%; }
+
+  .underline3 {
+    white-space: nowrap; }
+
+  #con {
+    padding-top: 20px; }
+
+  .loc {
+    padding-top: 35px; }
+
+  .more {
+    padding-top: 40px; } }
 
 /*# sourceMappingURL=main.css.map */
