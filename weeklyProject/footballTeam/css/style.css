@@ -1,0 +1,96 @@
+*{  margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+    height: 195px;
+   background-image: url("../assets/images/logo/logo.png");
+    margin: 0 auto;
+    padding-top:30px;
+
+}
+
+.banner{
+background-color: whitesmoke;
+ border: 4px solid blue;
+ width: 30%;
+ margin: 0 auto;
+ text-align: center;
+ border-radius: 30%;
+}
+
+.banner h1{
+    color: blue;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+#team{
+    background-image: url("../assets/images/stadium/souz.jpg");
+
+}
+
+#team h3{
+    font-size: 60px;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+div#players,
+div#subs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* .player{
+    display: flex;
+} */
+
+div.player {
+    margin: 20px 30px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:  10px 10px 8px #d9d9d9;
+}
+  
+/* div.player img {
+    display: block;
+    width: 80%;
+  } */
+  
+div.player h4 {
+    font-size: 1.4em;
+    margin: 5px auto;
+  }
+  
+div.player h4.position {
+    margin-bottom: 10px;
+  }
+  
+
+  
+div.player p {
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    font-size: 1.5em;
+    background-color: #d31616;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+  }
