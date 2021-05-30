@@ -31,6 +31,7 @@ background-color: whitesmoke;
 
 #team{
     background-image: url("../assets/images/stadium/souz.jpg");
+    background-position: cover;
 
 }
 
@@ -50,9 +51,9 @@ div#subs {
   flex-wrap: wrap;
 }
 
-/* .player{
+.player{
     display: flex;
-} */
+}
 
 div.player {
     margin: 20px 30px;
@@ -67,30 +68,14 @@ div.player {
     box-shadow:  10px 10px 8px #d9d9d9;
 }
   
-/* div.player img {
-    display: block;
-    width: 80%;
-  } */
+
   
 div.player h4 {
-    font-size: 1.4em;
+    font-size: 24px;
     margin: 5px auto;
-  }
-  
-div.player h4.position {
-    margin-bottom: 10px;
   }
   
 
   
-div.player p {
-    position: absolute;
-    left: 15%;
-    top: 10%;
-    font-size: 1.5em;
-    background-color: #d31616;
-    padding: 10px 20px;
-    color: white;
-    border-radius: 10px;
-    font-weight: bold;
-  }
+
+  

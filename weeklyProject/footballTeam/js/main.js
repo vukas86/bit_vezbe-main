@@ -93,28 +93,6 @@ var sartid = {players: [
 ]
 };
 
-var sartidPlayers = sartid.players;
-
-function getRandomNumber (team){
-    var a = team.length-1;
-    var b = team.length-1;
-    var tmp;
-
-    while (b !== 0){
-        b = Math.floor(Math.random()*a);
-        b-=1;
-
-    tmp = team[a];
-    team[a] = team[b];
-    team[b] = team[a];
-    }
-    return tmp;
-}
-
-console.log(getRandomNumber(sartidPlayers));
-
-var firstTeam = 11;
-var substitutions = 4;
 
 var firstTeamHead = document.createElement("h3");
 var teamText = document.createTextNode("First Team");
@@ -134,7 +112,8 @@ var subs = document.createElement("div");
 subs.setAttribute("id", "subs");
 document.getElementById("team").appendChild(subs);
 
-
+var firstTeam = 11;
+var substitutions = 4;
 
 function addPlayers (){
     for (var i = 0; i<firstTeam + substitutions; i++){
