@@ -167,7 +167,7 @@ function addPlayers() {
 
 
 
-function getRandNum(arr) {
+/* function getRandNum(arr) {
     return Math.floor(Math.random() * arr.length);
 }
 
@@ -185,8 +185,8 @@ function zamena() {
 
     firstSquadPlayer.after(reserveSquadPlayer);
 
-}
-/* function getRandNum(arr) {
+} */
+function getRandNum(arr) {
     return Math.floor(Math.random() * arr.length);
 }
 
@@ -208,11 +208,11 @@ function playerSubstitution() {
     subPrevious ? subPrevious.after(firstSquadPlayer) : subNext.before(firstSquadPlayer);
 }
 
- */
+
 
 addPlayers();
-zamena();
+playerSubstitution()
 
-setInterval(zamena, 1000);
+setInterval(playerSubstitution, 1000);
 
 

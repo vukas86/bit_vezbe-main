@@ -1,0 +1,33 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url("superm.jpg");
+    background-size: cover;
+}
+
+
+.mario{
+    position: absolute;
+    background-image: url("mario.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 120px;
+    width: 120px;
+    top: 85%;
+    left: 44%;
+    transition: all .3s ease;
+}
+
+.running{
+    background-image: url("mario_running.gif");
+    
+}
+
+.jumping {
+    top: 70%;
+}
+
+.reverse{
+    transform: scaleX(-1);
+}
+
