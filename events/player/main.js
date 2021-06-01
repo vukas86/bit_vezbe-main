@@ -41,7 +41,7 @@ button.onclick = function () {
 } */
 
 /* var player = document.querySelector("img");*/
-function playerClick() {
+/* function playerClick() {
     document.querySelector('body').addEventListener('click', divMove);
 }
 function divMove(e) {
@@ -53,9 +53,19 @@ function divMove(e) {
 }
 
 playerClick();
+ */
+
+var court = document.querySelector("#field");
+var player = document.querySelector("#player");
+var stopPlayer = document.querySelector("#stop");
+
+court.addEventListener('click', movePlayer);
+stopPlayer.removeEventListener('click', movePlayer);
 
 
-
-
-
+function movePlayer (event) {
+    player.style.left = event.clientX + 100 + 'px';
+    player.style.top = event.clientX  + 100 + 'px';
+    stopPlayer.removeEventListener('click', movePlayer);
+}
 

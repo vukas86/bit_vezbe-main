@@ -4,7 +4,7 @@ body{
    height: 100%;
    width: 100%;
    background-image: url("field.jpg");
-   background-position: inherit;
+
 }
 
 button{
@@ -12,11 +12,22 @@ button{
 }
 
 img{
-    height: 200px;
+    height: 100px;
+    position: absolute;
 }
 
 
-.move{
+
+
+#stop{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    padding: 5px 15px;
+    background-color: darkred;
+    border-radius: 5px;
+    border:none;
+    color:white;
     
     
 }
