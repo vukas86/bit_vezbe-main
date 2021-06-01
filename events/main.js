@@ -41,7 +41,7 @@ button.onclick = function () {
 } */
 
 /* var player = document.querySelector("img");*/
-function playerClick() {
+/* function playerClick() {
     document.querySelector('body').addEventListener('click', divMove);
 }
 function divMove(e) {
@@ -54,8 +54,13 @@ function divMove(e) {
 
 playerClick();
 
+ */
 
 
 
-
-
+class Person {
+    constructor(ime) {
+        this.name = ime;
+    }
+    sayName() { console.log(this.name) }
+}
