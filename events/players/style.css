@@ -1,0 +1,84 @@
+body{
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   background-image: url("field.jpg");
+
+}
+
+button{
+    float: right;
+}
+
+img{
+    height: 100px;
+    position: absolute;
+}
+
+
+
+
+#stop{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    padding: 5px 15px;
+    background-color: darkred;
+    border-radius: 5px;
+    border:none;
+    color:white;
+    
+    
+}
+
+
+
+/* #chat{
+    width: 90%;
+}
+
+button{
+    color: white;
+    width: 150px;
+    padding: 5px;
+    background-color: red;
+}
+
+#area{
+    background-color: white;
+    height: auto;
+}
+
+p{
+    background-color: rgb(255, 249, 249);
+  margin: 0 auto;
+    padding:2px;
+    border: 2px solid black;
+    border-radius: 10%;
+    height: 30px;
+    width: 250px;
+    text-align: center;
+} */
+
+/* .gray{
+    background-color: wheat;
+}
+
+.but{
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#but2{
+    color: white;
+    background-color: rgb(223, 166, 62);
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+} */
