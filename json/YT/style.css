@@ -1,8 +1,58 @@
-img{
-    height: 100px;
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
    
 }
 
-.form-inline{
-    padding-left: 20;
+#header{
+    height: 60px;
+    display: flex;
+   border-bottom: 2px solid black;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px;
 }
+
+#preview{
+    height: 600px;
+    width: 100%;
+    
+    flex-shrink: 0;
+    display: none;
+}
+
+#results{
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+img{
+    height: 100px;
+    float: left;
+   
+}
+
+ .video-card{
+    padding: 30px;
+    border: 2px solid rgb(185, 178, 178);
+    margin-top: 10px;
+    overflow: hidden;
+
+}
+.video-card>p{
+    padding: 10px;
+    
+}
+
