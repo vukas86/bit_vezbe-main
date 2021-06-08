@@ -2,11 +2,13 @@ var shows = document.querySelector("main .wrapper")
 
 function createShow(tvshow) {
     if (tvshow.image) {
-        var tvshowContainer = document.createElement("a")
-        var tvshowImage = document.createElement("img")
-        var tvshowTitle = document.createElement("p")
+        var tvshowContainer = document.createElement("a");
+        var tvshowImage = document.createElement("img");
+        var tvshowTitle = document.createElement("p");
 
-        tvshowContainer.setAttribute("href", "page2.html");
+
+        tvshowContainer.setAttribute("href", "http://127.0.0.1:5500/page2.html?id=" + tvshow.id);
+        localStorage.setItem('id', `${tvshow.id}`);
         tvshowImage.setAttribute("src", tvshow.image.medium)
         tvshowTitle.textContent = tvshow.name
 
@@ -15,6 +17,12 @@ function createShow(tvshow) {
 
         shows.appendChild(tvshowContainer)
     }
+    /*  shows.addEventListener("click", (e) => {
+         localStorage.setItem("id", `${tvshow.id}`);
+         console.log(e.currentTarget);
+         window.location.href = "http://127.0.0.1:5500/page2.html"; */
+
+    /* }) */
 }
 
 function listShows(showsData) {
