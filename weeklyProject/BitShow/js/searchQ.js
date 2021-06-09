@@ -1,3 +1,73 @@
+function searchShow(query) {
+  const url = `http://api.tvmaze.com/search/shows?q=${query}`;
+
+  fetch(url)
+    .then(response => response.json())
+    .then((jsonData) => {
+      const results = jsonData.map(element => element.show.name)
+      renderResults(results);
+    })
+    .catch((error) => {
+      alert("There was a mistake!");
+      renderResults([]);
+    });
+
+}
+
+
+function createAllShows(tvshow) {
+  var tvshowTitle = document.createElement("a")
+  tvshowTitle.setAttribute("href", "http://127.0.0.1:5500/page2.html" + tvshow.show.id)
+  tvshowTitle.textContent = tvshow.show.name
+
+  dropdown.appendChild(tvshowTitle)
+}
+
+
+let searchTimeOutToken = 0;
+window.onload = () => {
+  const searchForShow = document.getElementById("search");
+  searchForShow.onkeyup = (event) => {
+    clearTimeout(searchTimeOutToken);
+
+    if (searchForShow.value.trim().length === 0) {
+      return;
+    }
+
+
+    searchTimeOutToken = setTimeout(() => {
+      searchShow(searchForShow.value);
+    }, 250)
+
+  };
+}
+
+function renderResults(results) {
+  const list = document.getElementById("resultsList");
+  if (renderResults.length === 0) {
+    matches = [];
+    matchList.innerHTML = '';
+  }
+  list.innerHTML = "";
+  results.forEach(result => {
+    const element = document.createElement("li");
+    const link = document.createElement("a");
+
+    link.setAttribute("href", "http://127.0.0.1:5500/page2.html");
+
+
+    element.innerText = result;
+    list.appendChild(element);
+    list.appendChild(link);
+  });
+
+}
+
+
+
+
+/*
+
 const search = document.getElementById('search');
 const matchList = document.getElementById('match-list');
 
@@ -28,14 +98,14 @@ const searchShows = async searchText => {
   let matches = shows.filter(show => {
     const regex = new RegExp(`^${searchText}`, 'gi');
     return show/* .name.match(regex); */
-  });
+/*   });
 
-  if (searchText.length === 0) {
-    matches = [];
-    matchList.innerHTML = '';
-  }
+if (searchText.length === 0) {
+  matches = [];
+  matchList.innerHTML = '';
+}
 
-  outputHtml(matches)
+outputHtml(matches)
 
 };
 
@@ -53,4 +123,4 @@ const outputHtml = matches => {
 }
 
 
-search.addEventListener('input', () => searchShows(search.value));
+search.addEventListener('input', () => searchShows(search.value)); * / */
